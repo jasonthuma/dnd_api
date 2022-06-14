@@ -13,7 +13,7 @@ const routes = require("./routes");
 
 app.use("/", routes);
 
-const port = process.env.SVR_PORT;
+const port = process.env.PORT;
 if (port == null || port == "") {
   port = 8080;
 }
