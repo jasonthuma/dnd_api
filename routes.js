@@ -14,6 +14,9 @@ const {
 } = require("./controllers");
 const { validateNewEntry } = require("./validation");
 
+router.get("/", (req, res) => {
+  res.send("Go to /players for player data and /monsters for monster data");
+});
 router.get("/players", getPlayers);
 router.get("/players/:id", getPlayerById);
 router.get("/monsters", getMonsters);
